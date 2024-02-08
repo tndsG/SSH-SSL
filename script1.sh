@@ -8,9 +8,8 @@
 ################################################################################
 rm -rf "$(pwd)/Scamsung"
 clone() {
-    git clone https://github.com/tndsG/SSH-SSL.git > /dev/null 2>&1
+    git clone https://github.com/tndsG/SSH-SSL.git
     cd SSH-SSL
-    chmod +x -R bin/
     chmod +x script2.sh
 }
 clone
