@@ -1,1 +1,16 @@
-!/bin/bash 
+#!/bin/sh
+################################################################################
+# Copyright (c) [2023] [Ravindu Deshan]
+#
+# Unauthorized publication is prohibited. Forks and personal use are allowed.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+################################################################################
+rm -rf "$(pwd)/Scamsung"
+clone() {
+    git clone https://github.com/tndsG/SSH-SSL.git > /dev/null 2>&1
+    cd SSH-SSL
+    chmod +x -R bin/
+    chmod +x script2.sh
+}
+clone
